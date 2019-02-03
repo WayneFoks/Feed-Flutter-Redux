@@ -17,16 +17,11 @@ class FlutterApp extends StatelessWidget {
     middleware: [thunkMiddleware],
   );
 
-//  final store = new Store<List<String>>(addItemReducer,
-//      initialState: new List());
-
-  FlutterApp();
-
   @override
   Widget build(BuildContext context) {
     return new StoreProvider<FeedState>(
-      store: store,
-      child: new MyHomePage(store),
+        store: store,
+        child: new MyHomePage(store),
     );
   }
 }
