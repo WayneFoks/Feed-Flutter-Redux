@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
-import 'package:leaf/model/FeedState.dart';
+import 'package:leaf/model/state/FeedState.dart';
 import 'package:leaf/redux/actions.dart';
 import 'package:leaf/view/card.dart';
 import 'package:leaf/view/web.dart';
@@ -101,7 +101,6 @@ class _ChannelListState extends State<ChannelList> {
   }
 
   void _onRefresh(up, RefreshController controller, store) {
-    print("_onRefresh ****************");
     if (up) {
       //headerIndicator callback
       store.dispatch(RequestArticle(
@@ -109,7 +108,6 @@ class _ChannelListState extends State<ChannelList> {
           controller: controller,
           refreshType: RefreshType.PULL_DOWN));
     } else {
-      print("_onRefresh ****************  down");
       //footerIndicator Callback
       store.dispatch(RequestArticle(
           store: store,

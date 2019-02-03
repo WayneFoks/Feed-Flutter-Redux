@@ -1,10 +1,10 @@
-import 'package:leaf/model/FeedState.dart';
+import 'package:leaf/model/state/FeedState.dart';
 
-class ArticleApi {
+class ChannelArticle {
   Map<String, Article> articles = new Map();
 
-  static ArticleApi parse(Map<String, dynamic> map) {
-    ArticleApi api = new ArticleApi();
+  static ChannelArticle parse(Map<String, dynamic> map) {
+    ChannelArticle api = new ChannelArticle();
     if (map == null) {
       return api;
     }

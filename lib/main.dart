@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
-import 'package:leaf/model/FeedState.dart';
+import 'package:leaf/model/state/FeedState.dart';
 import 'package:redux_thunk/redux_thunk.dart';
 import 'package:leaf/redux/reducers.dart';
 import 'package:leaf/view/home_page.dart';

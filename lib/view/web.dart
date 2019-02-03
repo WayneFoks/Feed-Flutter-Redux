@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
-import 'package:leaf/model/FeedState.dart';
+import 'package:leaf/model/state/FeedState.dart';
 import 'package:redux_dev_tools/redux_dev_tools.dart';
 
 class WebPage extends StatefulWidget {

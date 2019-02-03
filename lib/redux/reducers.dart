@@ -1,4 +1,4 @@
-import 'package:leaf/model/FeedState.dart';
+import 'package:leaf/model/state/FeedState.dart';
 import 'package:leaf/redux/actions.dart';
 
 FeedState feedReducer(FeedState pre, dynamic inAction) {
